@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan&display=swap');
+
+/*Comentario tem que ser assim, não pode usar sintaxe do html*/
+
+body {
+    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Century Gothic';/*
+    font-family: 'Anuphan', sans-serif;
+    font-size: 17px;
+    background-image: url(../imagens/fundo.webp);
+    background-repeat: no-repeat; /* repeat-x / repeat-y */
+}
+
+h1 {
+    background-color: #bbb !important;
+    font-size: 25px;
+    padding: 15px;
+    /*font-weight: normal;*/
+}
+
+h2 {
+    font-size: 22px;
+    margin: 25px 0 25px 0;
+    letter-spacing: 2px;
+}
+
+h1, h2{
+    color: #00a;
+}
+
+img {
+    float: right;
+    /*margin: 10px;*/
+    margin-left: 10px;
+    margin-right: 10px;
+    margin: 0 20px 10px 0; /*sentido horário começando do topo*/
+    /*border-width: 3px;
+    border-color: #ccc;
+    border-style: double;*/
+    border: 3px solid #00c;
+    padding: 5px;
+}
+
+/*
+a {
+    color: #000;
+}
+*/
+
+p {
+    line-height: 20px;
+}
+
+table, th, td {
+    font-size: 18px;
+    text-align: left;
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+table {
+    /*width: 500px;*/
+    width: 50%;
+}
+
+th, td {
+    padding: 8px;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+thead tr {
+    background-color: #aaa;
+}
+
+tbody tr:hover {
+    background-color: #00f;
+    cursor: cell;
+}
+
+/* Seletores personalizados */
+
+.flutua-esq {
+    float: left;
+}
+
+.linha_par {
+    background-color: #eee;
+}
+
+.linha_impar {
+    background-color: #0f0;
+}
+
+/* Seletor de ids */
+#titulo-destaque {
+    color: red;
+}
+
+/*
+a:link {
+    color: #0ff;
+}
+
+a:visited {
+    color: #ff0;
+}
+
+a:hover {
+    color: #f0f;
+}
+
+a:active {
+    color: #17f;
+}
+*/
+
+#rubens {
+    color: purple;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <title>Formulário de contato</title>
+    <meta charset="UTF-8">
+
+    <style>
+    body {
+	font-family: Tahoma, Geneva, Verdana, sans-serif;
+    }
+    </style>
+</head>
+
+<body>
+
+<h1>FATEC Baixada Santista Rubens Lara</h1>
+
+<h2>Contato</h2>
+
+<form action="http://hub.fatecrl.edu.br/sobrino/recebe-v2.php" method="post">
+
+    <p>
+	<label for="nome">Nome</label> <br>
+	<input type="text" name="nome" id="nome" size="45" maxlength="60"> <!-- dá pra aumentar usando css (width) -->
+    </p>
+
+    <p>
+	<label for="senha">Senha</label> <br>
+	<input type="password" name="senha" id="senha">
+    </p>
+
+    <p>
+	<label for="mensagem">Mensagem</label> <br>
+	<textarea id="mensagem" name="mensagem" rows="5" cols="60"></textarea>
+    </p>
+
+    <p>
+	<label for="curso">Curso</label> <br>
+	<select name="curso" id="curso">
+	    <option>Escolha...</option>
+	    <option value="ADS">Análise e Desenvolvimento de Sistema</option>
+	    <option value="CD">Ciência de Dados</option>
+	    <option value="GE">Gestão Empresarial</option>
+	    <option value="GP">Gestão Portuária</option>
+	    <option value="GRH">Gestão de Recursos Humanos</option>
+	    <option value="LOG">Logística</option>
+	    <option value="SI">Sistemas para Internet</option>
+	</select>
+    </p>
+
+    <p>
+    <fieldset>
+	<legend>Você já é nosso aluno?</legend>
+	<input type="radio" name="eh_aluno" id="aluno_sim" value="sim">
+	<label for="aluno_sim">Sim</label> <!-- radio: names iguais, values diferentes -->
+	<input type="radio" name="eh_aluno" id="aluno_nao" value="nao">
+	<label for="aluno_nao">Não</label> <!-- com label pode-se clicar fora do radio -->
+    </fieldset>
+    </p>
+
+    <p>
+    <fieldset>
+	<legend>Deseja ser contatado por</legend>
+	<input type="checkbox" name="contato-por[]" id="contato-tel" value="contato-tel">
+	<label for="contato-tel">Telefone</label> <!-- radio: names iguais, values diferentes -->
+	<input type="checkbox" name="contato-por[]" id="contato-email" value="contato-email">
+	<label for="contato-email">E-mail</label> <!-- com label pode-se clicar fora do radio -->
+	<input type="checkbox" name="contato-por[]" id="contato-wa" value="contato-wa">
+	<label for="contato-wa">WhatsApp</label> <!-- com label pode-se clicar fora do radio -->
+    </fieldset>
+    </p>
+
+    <p>
+    <button>Enviar</button>
+    </p>
+</form>
+
+</body>
+
+</html>
