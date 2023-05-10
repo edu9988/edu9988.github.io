@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color:#1D212B;
+}
+
+header{
+    height:10vh;
+    width: 100%;
+    background-color: #88a7c5;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0 70px;
+    position:fixed;
+    z-index: 3;
+    overflow:hidden;
+}
+
+header div{
+    display: flex;
+    justify-content: space-around;
+    width:75vw;
+}
+
+#logo{
+    height:8vh;
+    left:10vh;
+    margin: 1vh 2vw auto 1vw;
+}
+
+#topo{
+    background-image: url(docs/fundoGif.gif);
+    background-size:cover;
+    background-position: center;
+    flex-direction: column;
+}
+
+#topo h2{
+    font-size: 28px;
+    z-index: 2;
+}
+
+#topo h1{
+    z-index: 2;
+}
+
+#topo img{
+    position: absolute;
+    bottom: 0;
+    left:10px;
+    max-height:40vh;
+    max-width:90%;
+}
+
+a{
+    text-decoration: none;
+    color:#193046;
+    font-weight: bolder;
+    font-size: 25px;
+    text-transform: uppercase;
+    max-width: fit-content;
+}
+
+section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section:nth-child(even){
+    color:#fff;
+}
+
+section:nth-child(odd){
+    color:#1D212B;
+    background:#fff;
+}
+
+section .container{
+    margin:100px;
+}
+
+section h1{
+    font-size: 60px;
+    text-align: center;
+}
+
+section h2{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section .cards{
+    display: flex;
+}
+
+section .cards .card{
+    background: #0d83f2;
+    margin:20px;
+    padding: 20px;
+    max-width: calc(50% - 40px);
+}
+
+section .cards .card h3{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+section .tipos{
+    flex-wrap: wrap;
+}
+
+section .tipos .card{
+    max-width: calc(100%/3 - 40px);
+}
+
+@media (max-width:1280px){
+    section .tipos .card{
+        max-width: calc(100%/2 - 40px);
+    }   
+}
+
+@media (max-width:1080px){
+    header *:not(:first-child){
+        display: none;
+    }
+}
+
+@media (max-width:900px){
+    section h1{
+        font-size: 40px;
+    }
+    section .cards{
+        flex-direction: column;
+    }
+    section .cards .card{
+        max-width: fit-content;
+    }
+    #topo h2{
+        font-size: 22px;
+    }
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.revealTitle{
+    position: relative;
+    transform: translateX(-250px);
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+
+.revealSubT{
+    position: relative;
+    transform: translateY(80px);
+    opacity: 0;
+    transition: all 1.2s ease;
+}
+
+.revealTitle.active, .revealSubT.active{
+    transform: translate(0, 0);
+    opacity: 1;
+}
