@@ -36,34 +36,47 @@
 	    text-align: center;
 	}
 
-	.country_bars {
-	    margin: 11px;
-	}
-
-	.fonte {
+	.source {
 	    font-size: 12px;
-	    text-align: left;
+	    text-align: right;
 	    color: #fff;
+	    float:left;
 	}
 
-	#bars {
-	    border-color: red;
-	}
-
-	.segment {
-	    display: inline;
+	.segment::after {
+	    content: "";
+	    clear: both;
+	    display: table;
 	}
 
 	.subsegment {
 	    border-style: dashed;
-	    border-color: coral;
+	    border-color: white;
+	    float: left;
+	    width: 40%;
 	}
 	
+	.subsegment:first-child {
+	    padding-left: 100px;
+	    margin-left: 10%;
+	}
+
+	.subsegment:last-child {
+	    padding-left: 20px;
+	    margin-right: 10%;
+	}
+
 	.textbox {
 	    border-style: solid;
 	    border-color: #00f;
 	}
 
+	@media only screen and (max-width: 768px) {
+	    /* For mobile phones: */
+	    .subsegment {width: 100%;}
+	    .subsegment:first-child {margin-left:0;}
+	    .subsegment:last-child {margin-right:0;}
+	}
     </style>
 
 </head>
@@ -145,36 +158,30 @@
 	    <br>
 
 	    <div class="segment">
-		<div id="bars" class="subsegment">
-		    <p class="country_bars">
-			<svg width="300" height="40">
-			    <mask id="flags_mask">
-				<circle fill="#fff" cx="20" cy="20" r="20" />
-			    </mask>
-			    <image width="40" height="40" xlink:href="docs/us_flag.jpg" mask="url(#flags_mask)"></image>
-			    <rect x="65" y="10" width="150" height="20" fill="#4372b8"/>
-			    <text x="233" y="26" fill=#fff>150 mil</text>
-			</svg>
-		    </p>
-		    <p class="country_bars">
-			<svg width="300" height="40">
-			    <image width="40" height="40" xlink:href="docs/uk_flag.jpg" mask="url(#flags_mask)"></image>
-			    <rect x="65" y="10" width="60" height="20" fill="#4372b8"/>
-			    <text x="143" y="26" fill=#fff>60 mil</text>
-			</svg>
-		    </p>
-		    <p class="country_bars">
-			<svg width="300" height="40">
-			    <image width="40" height="40" xlink:href="docs/china_flag.jpg" mask="url(#flags_mask)"></image>
-			    <rect x="65" y="10" width="18" height="20" fill="#4372b8"/>
-			    <text x="101" y="26" fill=#fff>18 mil</text>
-			</svg>
-		    </p>
-		    <p class="fonte">Fonte: LinkedIn</p>
+		<div class="subsegment">
+		    <svg width="300" height="50">
+			<mask id="flags_mask">
+			    <circle fill="#fff" cx="20" cy="20" r="20" />
+			</mask>
+			<image width="40" height="40" xlink:href="docs/us_flag.jpg" mask="url(#flags_mask)"></image>
+			<rect x="65" y="10" width="150" height="20" fill="#4372b8"/>
+			<text x="233" y="26" fill=#fff>150 mil</text>
+		    </svg>
+		    <svg width="300" height="50">
+			<image width="40" height="40" xlink:href="docs/uk_flag.jpg" mask="url(#flags_mask)"></image>
+			<rect x="65" y="10" width="60" height="20" fill="#4372b8"/>
+			<text x="143" y="26" fill=#fff>60 mil</text>
+		    </svg>
+		    <svg width="300" height="40">
+			<image width="40" height="40" xlink:href="docs/china_flag.jpg" mask="url(#flags_mask)"></image>
+			<rect x="65" y="10" width="18" height="20" fill="#4372b8"/>
+			<text x="101" y="26" fill=#fff>18 mil</text>
+		    </svg>
+		    <p class="source" style="padding-left:110px;">Fonte: LinkedIn</p>
 		</div>
 
 		<div class="subsegment">
-		    <img src="docs/handshake.jpeg" width="208" height="100">
+		    <img src="docs/handshake.jpeg" alt="Business Handshake" width="208" height="100">
 		    <p>A área tem uma das maiores demandas da atualidade</p>
 		</div>
 	    </div>
@@ -185,7 +192,7 @@
 
 	    <div class="segment">
 		<div class="subsegment">
-		    <img src="docs/brain.jpeg" width="178" height="131">
+		    <img src="docs/brain.jpeg" alt="Brain-shaped wiring" width="178" height="131">
 		</div>
 		<div class="subsegment">
 		    <div class="textbox">
