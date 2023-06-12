@@ -263,9 +263,35 @@
 	    }
 	}
 
-	@media only screen and (max-width: 455px) {
+	@media only screen and (max-width: 470px) {
 	    #infografico > div {
 		width: 95%
+	    }
+	    .textbox > div:first-child, .textbox > div:last-child {
+		float: none;
+		width: 100%;
+	    }
+	    .textbox > div:first-child, .textbox > div:last-child {
+		float: none;
+		width: 100%;
+	    }
+	}
+
+	@media only screen and (max-width: 340px) {
+	    #flag_box > svg {
+		transform: scale(0.6) translateX(-105px);
+	    }
+	    #flag_box {
+		width:180px;
+	    }
+	    #handshake_box {
+		width: 98%;
+	    }
+	    #infografico h2 {
+		font-size: 26px;
+	    }
+	    #brain_box {
+		transform: scale(0.6) translateX(-20px);
 	    }
 	}
     </style>
@@ -445,6 +471,8 @@
 				Aumento em relação a 2020
 			    </div>
 			</div>
+			<br>
+			<p class="source" >Fonte: World Economic Forum</p>
 		    </div> <!-- end id="textboxes_box" -->
 		</div> <!-- end id="textboxes_subsegment" -->
 	    </div> <!-- end class="segment" -->
