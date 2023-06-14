@@ -15,7 +15,7 @@ body{
 header{
     height:10vh;
     width: 100%;
-     background-color: #8fbafb; 
+    background-color: #8fbafb; 
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -23,6 +23,17 @@ header{
     position:fixed;
     z-index: 3;
     overflow:hidden;
+}
+
+footer{
+    height:10vh;
+    width: 100%;
+    background-color: #8fbafb; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow:hidden;
+    font-size: 1em;
 }
 
 header div{
@@ -61,13 +72,18 @@ header div{
     max-width:90%;
 }
 
-a{
+a:not(footer a){
     text-decoration: none;
     color:#193046;
     font-weight: bolder;
     font-size: 25px;
     text-transform: uppercase;
     max-width: fit-content;
+}
+
+footer a{
+    text-decoration: none;
+    color: #0564f4;
 }
 
 header div a:hover{
@@ -81,6 +97,8 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 100%;
+    min-width: 100%;
 }
 
 section:nth-child(even){
@@ -152,15 +170,27 @@ section .cards .card h3{
     margin-bottom: 15px;
 }
 
-iframe{
+#topo a{
+    background-color: rgb(255, 230, 40);
+    padding: 20px 40px 20px 40px;
+    margin-top:40px;
+    border:none;
+    text-transform: uppercase;
+    font-size: 26px;
+    z-index:2;
+}
+
+#video iframe{
+    transition: none 0.0s linear;
     height:80vh;
     width:75vw;
     max-height: calc(75vw/1.9);
+    margin-top:20px;
 }
 
 @media (max-width:1280px){
     section .tipos .card{
-        max-width: calc(100%/2 - 40px);
+        max-width: calc(100%/2 - 40px) !important;
     }   
 }
 
@@ -174,25 +204,28 @@ iframe{
     section h1{
         font-size: 40px;
     }
-    section .cards{
+    section .cards:not(#fotos .cards){
         flex-direction: column;
     }
     section .cards .card{
-        max-width: fit-content;
+        max-width: fit-content !important;
     }
     #topo h2{
         font-size: 22px;
     }
+    footer{
+        font-size: 0.6em;
+    }
 }
 
-.reveal{
+.reveal, .revealButton{
     position: relative;
     transform: translateY(150px);
     opacity: 0;
     transition: all 2s ease;
 }
 
-.reveal.active{
+.reveal.active, .revealButton.active{
     transform: translateY(0px);
     opacity: 1;
 }
@@ -214,4 +247,106 @@ iframe{
 .revealTitle.active, .revealSubT.active{
     transform: translate(0, 0);
     opacity: 1;
+}
+
+#cadastro{
+    flex-direction: column;
+    padding-top: calc(10vh + 25px);
+}
+
+#textoCadastro{
+    max-width:400px;
+    min-width:200px;
+    width:90%;
+    text-align: center;
+}
+
+#formContato{
+    background-color: #5d99f3;  
+    padding:25px;
+    margin-bottom:40px;
+    margin-top:35px;
+    max-width:400px;
+    min-width:200px;
+    width:90%;
+}
+
+#formContato input:not([type='radio']):not([type='checkbox']), textarea, #Curso{
+    max-width:370px;
+    width:100%;
+    border: none;
+    padding: 7px;
+}
+
+#formContato input:focus, textarea:focus{
+    outline: none;
+    background-color:rgb(240, 247, 255);
+}
+
+select{width: 380px !important;}
+
+#formContato *:not(legend){margin-bottom: 10px;}
+
+label:not(fieldset label){
+    display: block;
+    margin-bottom: 5px;
+}
+
+label{
+    font-weight: 500;
+}
+
+textarea{resize: none;}
+
+option{padding: 20px;}
+
+fieldset{
+    border-color: #4b5760;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.fieldsetOpt{
+    margin:0 !important; 
+}
+
+#formContato button{
+    width:65%;
+    height:30px;
+    border: none;
+    background-color: rgb(255, 230, 40);;
+    display: block;
+    margin: 20px auto auto auto;
+    font-weight:600;
+}
+
+#fotos img{
+    width:20vw;
+}
+
+@media (max-width:1080px) {
+    #fotos img{
+        width:30vw;
+    }
+}
+
+@media (max-width:680px) {
+    #fotos img{
+        width:50vw;
+    }
+}
+
+#fotos .cards{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#fotos .card{
+    min-width:200px;
+}
+
+#fotos h3{
+    font-size:1.2em;
 }

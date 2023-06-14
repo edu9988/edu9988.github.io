@@ -24,8 +24,10 @@ function revealTitle(){
     revealTitle.classList.add('active');
     setTimeout(function revealSubTitle(){
         var revealSubT = document.querySelector('.revealSubT');
-    
+        var revealButton = document.querySelector('.revealButton');
+        
         revealSubT.classList.add('active');
+        revealButton.classList.add('active');
     }, 500);
 }
 
