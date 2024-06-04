@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MUSEO DEL CAFÉ | SANTOS/SP</title>
+<link href="css/main.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<!-- <script src="js/script.js"></script> -->
+
+<style>
+    a{color:#5e0b15;}
+    a:hover{color:#ffeedb; background-color: #413620;}
+
+body{
+    font-size: 17px;
+    margin: 20px;
+    padding: 0;
+    background-color: #ffeedb;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+</style>
+
+<body id="topo">
+
+<header class="header">
+    <div>
+        <img src="Imagens/logo-vermelho.png" alt="Logotipo do Museu do Café de Santos" width="200">
+    </div>
+
+    <div>
+    <div class="header-container">
+        <!--<div class="header-left">
+            <a href="index.html" class="logo"><img src="Imagens/Museum-logo.png" width="80" height="50"></a>
+         <div class="header-title">MUSEO</div>
+        </div>-->
+        <nav class="nav-menu">
+            <a href="index-es.html">HOME</a>
+            <a href="#artes">ARTE</a>
+            <a href="#infografico">INFOGRAFÍA</a>
+            <a href="#video">VIDEO</a>
+            <div class="language">
+                <div class="language-selected">
+                    <img src="https://www.flagsapi.com/ES/flat/64.png" alt="Hola, que tal?">
+                </div>
+                <ul>
+                    <li><a href="index.html" class="br">Portugues</a></li>
+                    <li><a href="index-en.html" class="en">English</a></li>
+                    <li><a href="index-es.html" class="es">Español</a></li>
+                </ul>    
+            </div>
+        </nav>
+    </div>
+    <p class="title">Museo del Café</p>
+    </div>
+</header>
+<br>
+
+<section class="section">
+
+    <!--<h1>El arte presente en el Museo del Café Santos</h1>-->
+    <h1>Un patrimonio histórico y cultural</h1>
+
+<div class="arte-container">
+    <div class="obra">
+       <div id="foto-inicio">
+            <img src="Imagens/img-22.jpg" loading="lazy" width="550" height="400"  alt="Hola, que tal?">
+       </div>
+       <div class="alinha" id="texto-inicio">
+       <p class="cor-texto">La construcción del palacio oficial de la bolsa de café, obra de la Companhia Constructora de Santos, de estilo ecléctico, es considerada la obra más importante de la época.
+        Estilo, volumen, cúpulas de cobre, grandes esculturas, vitrales, mármoles, obra de artesanos extranjeros y obras de arte construyeron el discurso que vinculó a la élite cafetera con los primeros bandeirantes como constructores pioneros de una nación liderada por São Paulo.
+        Así, en 1920, la Companhia Constructora de Santos inició las obras de construcción de la Bolsa Oficial del Café. La construcción retrata una mezcla de varios movimientos arquitectónicos, especialmente los estilos neoclásico y barroco.
+        Para la fachada, Companhia Construtora de Santos compró granito rosa de Salto de Itu, diseñado por el arquitecto belga Ernest Chaineux y ejecutado por los canteros Antônio y José Longobardi.
+        Justo en la entrada nos encontramos con una pequeña vidriera encima de las puertas con el símbolo “Estados Unidos de Brasil”, el nombre oficial del país en la fecha de inauguración del edificio y el escudo de armas de Brasil, compuesto por dos brazos : uno de café y el otro de humo. .
+        La torre del reloj tiene unos 40 metros de altura y en su parte superior destacan cuatro esculturas de arquitectura, que representan la agricultura, el comercio, la industria y el marinero.       
+        </p>
+       </div>
+    </div>
+<br>
+
+<h2 class="artes">ARQUITECTURA Y OBRAS DE ARTE</h2>
+<br>
+
+<div class="carroussel-container">
+    <button class="arrow-left control" aria-label="Última Imagem">◄</button>
+    <button class="arrow-right control" aria-label="Próxima Imagem">►</button>
+    <div class="gallery-wrapper">
+        <div class="gallery">
+            <img class="slide current-slide" src="Imagens/img-11.jpg" alt="Teto da entrada principal do Museu do Café" style="width: 60%;">
+            <img class="slide" src="Imagens/img-12.jpg" alt="Parede da entrada principal do Museu do Café" style="width: 60%;">
+            <img class="slide" src="Imagens/img-17.jpg" alt="Vista do primeiro andar do Salão do Pregâo" style="width: 60%;">
+            <img class="slide" src="Imagens/img-19.jpg" alt="Piso do Salão do Pregão" style="width: 60%;">
+            <img class="slide" src="Imagens/img-20.jpg" alt="Corredor lateral do Museu do Café" style="width: 60%;">
+            <img class="slide" src="Imagens/img-21.jpg" alt="Teto do Salão do Pregão" style="width: 60%;">
+            <img class="slide" src="Imagens/Bolsa_do_Café_de_Santos-_Seus_vitrais.JPG" alt="Vista do Vitral do Salão Principal" style="width: 60%;">
+            <img class="slide" src="Imagens/Bolsa_Oficial_de_Café_-_Sala_do_Pregão.jpg" alt="Vista do Salão do Pregão" style="width: 60%;">
+
+        </div>
+    </div>
+    <p class="cor-texto">En arquitectura destacan los estilos neoclásico y barroco.</p>
+</div>
+<br>
+<p class="texto-unico cor-texto">En la Sala de Subastas se encuentra la mayor concentración de obras de arte y la arquitectura característica del edificio. En esta sala se realizaban negociaciones para la compra y venta de granos, y se encuentran varios símbolos masónicos, como la estrella de seis puntas en el centro del piso y la organización de la platea y las columnas. El mobiliario está dispuesto en forma octogonal y representa la jerarquía de la Bolsa: la junta directiva con el presidente en el centro y los corredores alrededor. El salón también cuenta con un conjunto de obras diseñadas y ejecutadas por el pintor <a href="https://pt.wikipedia.org/wiki/Benedito_Calixto"><em>Benedicto Calixto</em></a>, considerado un ícono del arte de Santos: un vitral y tres pinturas, así:
+</p>
+<br>
+
+<span id="artes"></span>
+<div id="obra-fundacao">
+    <img src="Imagens/Fundacao_Vila_Santos.jpg" alt="Hola, que tal?">
+</div>
+
+<div class="descricao"> 
+   <p>Fundación de la Villa de Santos — 1545</p>
+   <p>Técnica: Óleo sobre lienzo</p> 
+   <p>Fecha: 1921-1922</p>
+   <p>Dimensiones: Es un tríptico (tres lienzos que forman una escena) que mide 3,25m de alto por 9m de ancho</p>
+</div>
+<br>
+   <p class="texto-unico cor-texto">En el lienzo "FUNDACIÓN DE VILA DE SANTOS - 1545" el autor presenta a la familia São Paulo como génesis de la civilización brasileña al establecer los grados de parentesco, sucesión y jerarquía en los círculos políticos, militares y religiosos de los personajes que componen la escena .
+    Esta ubicación corresponde actualmente a la región de Praça da República. Más adelante, el autor comienza a describir los edificios del panel, comenzando por la Igreja da Misericórdia.
+    Cabe señalar que además de la Iglesia, el edificio albergaba el hospital que dio origen a la Santa Casa de Misericordia de Santos.
+   </p>
+<br> 
+    <div class="obra">
+       <div class="texto alinha espaco-left texto-left cor-texto">
+        <p>En la obra "O PORTO DE SANTOS EM 1822", vemos la Cárcel y el Conjunto do Carmo con las iglesias de primer y tercer orden y el convento.
+           Desde allí se divisa el arroyo Itororó, que nace en el Monte Serrat y desemboca en el puerto. Luego, más cerca de la colina, vemos el Campo da Misericordia con la iglesia y el Hospital da Santa Casa.
+           Avanzando un poco más a la derecha hacia el cerro, encontramos la Iglesia de Nossa Senhora do Rosário. Volviendo a la zona del puerto vemos la iglesia de Jesús María José y avanzando un poco después del arroyo São Bento podemos ver el Conjunto do Valongo, administrado por los franciscanos, con la iglesia de Santo Antônio y el convento.
+           En el marco de este panel podemos ver cuatro medallones dispuestos en los extremos. En la esquina superior izquierda vemos un escudo de armas con la inscripción: Brasil Colônia 1549–1816. En la esquina superior derecha podemos leer: Brasil-Reino 1816–1822.
+           En la esquina inferior izquierda — Work and Order, ilustrado por una colmena de abejas. Abajo a la derecha: agricultura y comercio, ilustrado por un casco alado y el caduceo de Mercurio, dios del comercio.
+        </p>
+       </div>
+       <div class="alinhar-centro">
+       <div class="foto"><img src="Imagens/img-2.jpg" loading="lazy" width="550" height="400" alt="Hola, que tal?"></div>
+       <div class="descricao" style="margin-top: 20px;">
+        <p>Título: Puerto de Santos en 1822</p>
+        <p>Técnica: Óleo sobre lienzo</p> 
+        <p>Fecha: 1921-1922</p>
+        <p>Dimensiones: 325x247 (alto x ancho)cm</p>
+       </div>
+      </div>
+    </div>
+<br>
+    <div class="obra">
+        <div class="alinhar-centro">
+        <div class="foto"><img src="Imagens/img-4.jpg" loading="lazy" width="550" height="400" alt="Hola, que tal?"></div>
+           <div class="descricao" style="margin-top: 20px;">
+            <p>Título: Puerto de Santos en 1922</p>
+            <p>Técnica: Óleo sobre lienza</p> 
+            <p>Fecha: 1921-1922</p>
+            <p>Dimensiones: 325x247 (alto x ancho)cm</p>
+           </div>
+        </div>
+        <div class="texto alinha espaco-right">
+        <p class="cor-texto">En "O PORTO DE SANTOS EM 1922" el artista muestra todas las transformaciones desencadenadas por la exportación de café: esta nueva ciudad es el reflejo político de la inmigración y el desarrollo urbano.
+            Calixto eligió un mirador desde el cerro Pacheco. Allí podemos ver el canal del puerto que separa las islas de São Vicente y Santo Amaro formando una “L” invertida.
+            En el marco de este panel podemos ver cuatro medallones dispuestos en los extremos. En la parte superior izquierda, se lee: Imperio de Brasil — 1822–1889. Arriba a la derecha: Brasil República—1889–1922.
+            En la parte inferior, a la izquierda: Artes e Industria, cuya ilustración muestra un conjunto de objetos: una rueda dentada, una paleta de pintura, un capitel artesanal, una lira que recuerda la música y la poesía, el busto de Carlos Gomes y la primera página de la partitura. de “O Guaraní”.
+            En la parte inferior, a la derecha: Evolución y Progreso, destacando la concepción positivista del artista.
+        </p>
+        </div>
+    </div>
+<br>
+
+<div>
+    <div id="vitral">
+        <img src="Imagens/img-1.jpg" loading="lazy" alt="Hola, que tal?">
+    </div>  
+    <div class="descricao">
+        <p>Título: La Epopeya de los Bandeirantes</p>
+        <p>Técnica: Vitral Creado en el Estilo "Art Nouveau"</p> 
+        <p>Fecha: 1921-1922</p>
+    </div>
+</div>
+<br>
+<p class="texto-unico cor-texto">
+    El vitral “A EPOPEIA DOS BANDEIRANTES” está dividido en tres partes, que hacen referencia a diferentes momentos históricos de Brasil. En el centro “La visión de Anhanguera, la Mãe D’Ouro y la Mães D’água”, representando el período colonial y la conquista de los sertões por los bandeirantes;
+            a los lados “Agricultura y Abundancia”, de época imperial, e “Indústria e Commercio” de época republicana. Además, está compuesto por ocho bustos de bandeirantes y un marco decorado con géneros agrícolas, fauna, flora y seres del folclore brasileño.
+            A pesar de buscar una interpretación de la historia nacional desde la perspectiva de São Paulo, Calixto eligió un enfoque fantástico, lleno de alegorías, mezclando aspectos de una mitología europea clásica con elementos mitológicos, fauna y flora brasileñas.
+            Esta composición, sumada a la luminosidad tropical proporcionada por los colores de vidrio elegidos, denotan una intención de atribuir una calidad brasileña a la obra, aunque de manera conservadora.
+</p>
+<br> 
+
+    <p>
+        <a href="#topo">
+            Regresa al comienzo
+        </a>
+    </p>
+    <br>
+   </div> 
+<br>
+
+<h2 id="infografico" class="artes">INFOGRAFÍA</h2>
+<br>
+<div class="infographic">
+    <div class="item">
+       <div ><img src="Imagens/construçãoBolsa.jpg" class="photo borda-direita" alt="Hola, que tal?"></div>
+       <div class="text-right">
+       <h2 class="borda-central item-right infotexto-right"> 1920 - INICIO DE LAS OBRAS</h2>
+       <p>La Bolsa comenzó a funcionar en 1917 en una pequeña oficina y, a fines del siglo XIX, el desarrollo de la economía cafetera desencadenó un amplio proceso de transformaciones urbanas en la ciudad de Santos.
+        Este período, caracterizado por algunos autores como la Belle Epoque de Santos, inició la necesidad de construir un monumento que simbolizara este auge económico.
+        </p>
+       </div>
+    </div>
+
+    <div class="item">
+       <div class="text text-left">
+       <h2 class="borda-central">1922 - INAUGURACIÓN</h2>
+       <p>Se inaugura el Palácio da Bolsa Oficial de Café, surgiendo dos teorías para la elección de esta fecha, la primera en honor a la opulencia y pujanza de la élite cafetalera paulista y la segunda en honor al centenario de la proclamación de la independencia
+        Benedito Calixto está a cargo de ejecutar las mamparas y vitrales decorativos para el piso de remates, donde se realizaría la negociación del precio del producto.
+        La inauguración del palacio de la Bolsa Oficial del Café con obras de Benedito Calixto tuvo lugar el 7 de septiembre de 1922.
+        </p>
+       </div>
+       <div><img src="Imagens/Inauguração.jpg" class="photo borda-esquerda" alt="Hola, que tal?"></div>
+    </div>
+
+    <div class="item">
+       <div><img src="Imagens/santos-centro-1970.jpg " class="photo borda-direita" alt="Hola, que tal?"></div>
+       <div class="text-right">
+       <h2 class="borda-central item-right infotexto-right">1970 - EDIFICIO ABANDONADO</h2>
+       <p>Con el fin de las actividades de la Bolsa do Café, el edificio fue abandonado, quedando su mantenimiento relegado a algunas obras de pequeña conservación estructural, que no siempre fueron suficientes para solucionar los problemas presentados.
+       </p>
+       </div>
+    </div>
+
+    <div class="item">
+       <div class="text text-left">
+       <h2 class="borda-central">1986 - CIERRE DE LA BOLSA DE CAFÉ</h2>
+       <p>El Gobernador del Estado de São Paulo decreta el cierre oficial de la Bolsa de Café de Santos.
+       </p>
+       </div>
+       <div><img src="Imagens/Santos_1986.jpg" class="photo borda-esquerda" style="margin-left: 15vw;" alt="Hola, que tal?"></div>
+    </div>
+
+    <div class="item">
+       <div><img src="Imagens/Santos1996.jpg" class="photo borda-direita" alt="Hola, que tal?"></div>
+       <div class="text-right">
+       <h2 class="borda-central item-right infotexto-right">1996 - CREA EL PROYECTO MUSEO DEL CAFÉ</h2>
+       <p>Los Gobernadores del Estado de São Paulo se reunieron con organismos públicos y privados para crear el proyecto "MUSEO DEL CAFÉ", y en 1997 comenzaron los trabajos para restaurar y salvar el edificio Palácio da Bolsa do Café.
+       </p>
+       </div>
+    </div>
+
+    <div class="item">
+       <div class="text text-left">
+       <h2 class="borda-central">1998 - INTEGRACIÓN DEL MUSEO AL PALACIO DE LA BOLSA DEL CAFÉ</h2>
+       <p>Luego de la restauración y reapertura del Palacio Oficial de la Bolsa del Café, se integró al recién creado MUSEO DEL CAFÉ.
+       </p>
+       </div>
+       <div><img src="Imagens/Reinauguração_1998.jpg" class="photo borda-esquerda" alt="Hola, que tal?"></div>
+    </div>
+
+    <div class="item">
+       <div><img src="Imagens/Cafateria-Museu-do-Cafe-Santos.jpg" class="photo borda-direita" alt="Hola, que tal?"></div>
+       <div class="text-right">
+       <h2 class="borda-central item-right infotexto-right">2000 - INAUGURACIÓN DE LA CAFETERÍA DEL MUSEO DEL CAFÉ</h2>
+       <p>Se inaugura la Cafetería del Museo, que ofrece un menú variado y, por su excelencia en la preparación, es galardonada con el estatus "PREMIUM" por la Asociación Brasileña de la Industria del Café (ABIC).
+       </p>
+       </div>
+    </div>  
+
+    <div class="item">
+       <div class="text text-left">
+       <h2 class="borda-central">2009 - ESCUCHA DEL EDIFICIO POR IPHAN</h2>
+       <p>La construcción del Palacio, por su estilo ecléctico, es considerada la obra más importante de la época y, por tanto, fue el primer edificio de este estilo catalogado por el Instituto del Patrimonio Histórico y Artístico Nacional (IPHAN).
+       </p>
+       </div>
+       <div><img src="Imagens/288px-BolsaCafe1.jpg" class="photo borda-esquerda" alt="Hola, que tal?"></div>
+    </div>
+
+    <div class="item">
+       <div><img src="Imagens/Vitral-Bolsa-do-Cafe-de-Santos.jpg" class="photo borda-direita" alt="Hola, que tal?"></div>
+       <div class="text-right">
+       <h2 class="borda-central" style="width: 98%; margin-left: 18px;">2015-2016 - RESTAURACIÓN DE LA VITRINA "A EPOPEIA DOS BANDEIRANTE"</h2>
+       <p>Entre 2015 y 2016, la vidriera "A EPOPEIA DOS BANDEIRANTES" pasa por un cuidadoso proceso de restauración, dando como resultado una exposición temporal denominada "DESCONTRUINDO UMA EPOPEIA" que representaba un pequeño taller escenográfico con maquetas de herramientas utilizadas en la elaboración y vidrieras restauracion.
+       </p>
+       </div>  
+    </div>
+
+    <div class="item">
+       <div class="text text-left">
+       <h2 class="borda-central">EN ESTE MOMENTO</h2>
+       <p>El Museo del Café recibe más de 350.000 visitantes al año, quienes aprovechan la visita al museo para conocer otros atractivos turísticos del Centro Histórico de Santos en un verdadero viaje en el tiempo, que se puede realizar a pie.
+       </p>
+       </div>
+       <div><img src="Imagens/Museu-do-Cafe.jpg" class="photo borda-esquerda" alt="Hola, que tal?"></div>
+    </div>
+</div>
+
+<h3>Investigación llevada a cabo</h3>
+<p>Para obtener más información sobre el tema presentado, haga clic en los siguientes enlaces:</p>
+<a target="blank" href="https://museudocafesantos.medium.com/as-telas-de-benedicto-calixto-localizadas-no-museu-do-caf%C3%A9-pesquisa-e-documenta%C3%A7%C3%A3o-museol%C3%B3gica-1400a2762aee">Lienzos de Benedito Calixto en el Museo del Café</a><br>
+<a target="blank" href="https://museudocafesantos.medium.com/a-epopeia-bandeirante-benedicto-calixto-e-a-constru%C3%A7%C3%A3o-da-identidade-paulista-dacf0ac80c6d">Epopeya de vidrieras de los Bandeirantes</a><br>
+<a target="blank" href="https://www.museudocafe.org.br/bolsa-oficial-de-cafe/os-calixtos/"> Museo del Café</a><br>
+<a target="blank" href="https://pt.wikipedia.org/wiki/Benedito_Calixto"> Benedito Calixto</a><br>
+<br>
+  <p>
+      <a href="#topo">
+        Regresa al comienzo
+      </a>
+  </p>
+  <br>
+
+<br>
+<div class="video-container">
+<br>
+    <h2 id="video">VIDEO</h2>
+<br>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/r4F2Bgh5xuM" title="Museu do Cafe" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<br>
+<h3 style="color: #413620;">Video Presentación <a href="https://www.youtube.com/embed/r4F2Bgh5xuM"><strong><em>(enlace)</em></strong></a></h3>
+<p>
+    <a href="#topo">
+        Regresa al comienzo
+    </a>
+</p>
+<br>
+</div>
+</section>
+
+<footer class="about">
+    <div class="about-container">
+        <ul>
+            <li><a href="https://www.museudocafe.org.br/o-museu/informacoes/#comoChegar">Como Llegar</a></li>
+            <li><a href="https://www.museudocafe.org.br/contato/fale-conosco/">Contacto</a></li>
+        </ul>
+        <ul>
+            <li><a href="https://www.museudocafe.org.br/">Web Oficial</a></li>
+            <li><div class="tooltip" style="color: #ffeedb;"> Miembros 
+                <ul class="tooltip-content">
+                    <li>Lidia Luzia Messias</li>
+                    <li>RA 0050832311003</li>
+                    <li>Jose Eduardo Peres</li>
+                    <li>RA 0050832311019</li>
+                    <li>William Ruiz Mesquita</li>
+                    <li>RA 0050832311034</li>
+                </ul>
+            </div></li>
+        </ul>
+    </div>
+</footer>
+
+<script>
+    const controls = document.querySelectorAll('.control');
+    let currentSlide = 0;
+    const items = document.querySelectorAll('.slide');
+    const maxSlides = items.length;
+
+    controls.forEach(control => {
+        control.addEventListener('click', () => {
+            const isLeft = control.classList.contains('arrow-left');
+
+            if(isLeft) {
+                currentSlide -= 1;
+            } else {
+                currentSlide += 1;
+            }
+
+            if(currentSlide >= maxSlides) {
+                currentSlide = 0;
+            }
+
+            if(currentSlide < 0) {
+                currentSlide = maxSlides - 1;
+            }
+
+            items.forEach(slide =>
+                slide.classList.remove('current-slide'));
+
+            items[currentSlide].scrollIntoView({
+                inline: "center",
+                behavior: "smooth",
+                block:"nearest"
+            });
+
+            items[currentSlide].classList.add('current-slide');
+
+        });
+    });
+
+</script>
+
+</body>
+</html>
