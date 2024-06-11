@@ -9,6 +9,7 @@
 <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 <!-- <script src="js/script.js"></script> -->
 
+<script src="accessibility.js"></script>
 <Style>
    a{color:#5e0b15;}
    a:hover{color:#ffeedb; background-color: #413620;}
@@ -22,6 +23,7 @@
   background-size: cover;
   }
 </Style>
+</head>
 
 <body id="topo">
   
@@ -43,16 +45,6 @@
             <a href="video.html">VÍDEO</a>
             <a href="cursos.html">CURSOS</a>
             <a href="contato.html">CONTATO</a>
-            <div class="language">
-                <div class="language-selected">
-                    <img src="https://www.flagsapi.com/BR/flat/64.png" alt="Bandeira do Brasil">
-                </div>
-                <ul>
-                    <li><a href="index.html" class="br">Português</a></li>
-                    <li><a href="index-en.html" class="en">English</a></li>
-                    <li><a href="index-es.html" class="es">Español</a></li>
-                </ul>    
-            </div>
         </nav>
     </div>
     <p class="title">Museu do Café</p>
@@ -65,15 +57,15 @@
 <!--<p class="title">Museu do Café</p>-->
   
 <!--<h1>A arte presente no Museu do Café de Santos</h1>-->
-<h1>Um patrimônio histórico cultural</h1>
+<h1 tabindex="0">Um patrimônio histórico cultural</h1>
 
 <div class="arte-container">
     <div class="obra">
        <div id="foto-inicio">
-            <img src="Imagens/img-22.jpg" loading="lazy" width="550" height="400" alt="Vista frontal em perspectiva da entrada principal do prédio da Bolsa do Café  destacando a inscrição em mármore com nome do edifício: “Bolsa Oficial do Café”">
+            <img tabindex="0" src="Imagens/img-22.jpg" loading="lazy" width="550" height="400" alt="Vista frontal em perspectiva da entrada principal do prédio da Bolsa do Café  destacando a inscrição em mármore com nome do edifício: “Bolsa Oficial do Café”">
        </div>
        <div class="alinha" id="texto-inicio">
-            <p style="color: #413620;">A construção do palácio da Bolsa Oficial do Café, uma obra da Companhia Construtora de Santos, de estilo eclético, é considerada a mais importante obra do período. 
+            <p tabindex="0" style="color: #413620;">A construção do palácio da Bolsa Oficial do Café, uma obra da Companhia Construtora de Santos, de estilo eclético, é considerada a mais importante obra do período. 
                 Estilo, volume, cúpulas de cobre, grandes esculturas, vitrais, mármores, o trabalho de artífices estrangeiros e obras de arte construíram o discurso que relacionava a elite cafeeira aos primeiros bandeirantes enquanto construtores pioneiros de uma nação capitaneada por São Paulo.
                 Deste modo em 1920, a Companhia Construtora de Santos iniciou as obras do edifício da Bolsa Oficial do Café. A construção retrata uma mistura de vários movimentos arquitetônicos, destacando-se principalmente os estilos neoclássico e barroco.
                 Para a fachada, a Companhia Construtora de Santos adquiriu granito-rosa de Salto de Itu, desenhados pelo arquiteto belga Ernest Chaineux e executados pelos canteiros Antônio e José Longobardi. 
@@ -103,14 +95,14 @@
         </ul>
         <ul>
             <li><a href="https://www.museudocafe.org.br/">Sitio Oficial</a></li>
-            <li><div class="tooltip" style="color:#FFEEDB"> Integrantes
+            <li><div tabindex="0" class="tooltip" style="color:#FFEEDB"> Integrantes
                    <ul class="tooltip-content">
-                        <li>Lidia Luzia Messias</li>
-                        <li>RA 0050832311003</li>
-                        <li>Jose Eduardo Peres</li>
-                        <li>RA 0050832311019</li>
-                        <li>William Ruiz</li>
-                        <li>RA 0050832311034</li>   
+                        <li tabindex="0">Lidia Luzia Messias</li>
+                        <li tabindex="0">RA 0050832311003</li>
+                        <li tabindex="0">Jose Eduardo Peres</li>
+                        <li tabindex="0">RA 0050832311019</li>
+                        <li tabindex="0">William Ruiz</li>
+                        <li tabindex="0">RA 0050832311034</li>   
                     </ul>
             </div></li>
         </ul>
