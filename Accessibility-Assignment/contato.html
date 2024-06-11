@@ -64,33 +64,43 @@
 
 	<h1>CONTATO</h1> <br>
 
-	<form action="" method="post">
+	<form id="contactForm" action="" method="post">
 	    <p>
-		<label for="name">Nome Completo</label>
-		<input type="text" name="name" id="name" maxlength="140" >
-	    </p>
+			<label for="name">Nome Completo*:</label>
+			<input autocomplete="name" type="text" name="name" id="name" maxlength="140" placeholder=" Informe seu nome e sobrenome" aria-required="true" >	
+		</p>
+		<span class="error-message" id="nameError"></span>
 
 	    <p>
-		<label for="email">E-mail</label>
-		<input type="email" name="email" id="email" maxlength="140" >
-	    </p>
+			<label for="email">E-mail*:</label>
+			<input autocomplete="email" type="email" name="email" id="email" maxlength="140" placeholder=" seu@email.com" aria-required="true">
+		</p>
+		<span class="error-message" id="emailError"></span>
 
 	    <p>
-		<label for="phone">Telefone</label>
-		<input type="text" name="phone" id="phone" maxlength="140" >
-	    </p>
+			<label for="phone">Telefone*:</label>
+			<input autocomplete="tel" type="tel" name="phone" id="phone" maxlength="140" placeholder=" (00) 12345-6789" aria-required="true">
+		</p>
+		<span class="error-message" id="phoneError"></span>
 
 	    <p>
-		<label for="msg">Mensagem</label>
-		<textarea rows="5" name="msg" id="msg" ></textarea>
-	    </p>
+			<label for="msg">Mensagem:</label>
+			<textarea rows="5" name="msg" id="msg" placeholder=" Digite no mínimo 5 caracteres..."></textarea>
+		</p>
+		<span class="error-message" id="msgError"></span>
 	    
-	    <br>
+		<div >
+			<input id="btnenviar" type="submit" value="Enviar" name="submit"/>
+	    </div>
 
-	    <p>
-		<input type="submit" value="Enviar">
-	    </p>
 	</form>
+
+	<div id="successModal" class="modal">
+		<div class="modal-content">
+			<p>Sua mensagem foi enviada com sucesso!</p>
+			<span class="close">x</span>
+		</div>
+	</div>
 
     </section>
 
@@ -126,6 +136,7 @@
 	</div>
     </footer>
 
+	<script src="script.js"></script>
 </body>
 
 </html>
