@@ -116,6 +116,7 @@ window.onload = () => {
 		fetch( `https://crudcrud.com/api/${endpoint}/users` , {
 		    method:"POST",
 		    mode: "cors",
+		    credentials: "include",
 		    headers:{
 			"Content-Type": "application/json"
 		    },
