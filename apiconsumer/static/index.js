@@ -115,6 +115,7 @@ window.onload = () => {
 	    if( u.value.trim().length && p.value.trim().length ){
 		fetch( `https://crudcrud.com/api/${endpoint}/users` , {
 		    method:"POST",
+		    mode: "cors",
 		    headers:{
 			"Content-Type": "application/json"
 		    },
